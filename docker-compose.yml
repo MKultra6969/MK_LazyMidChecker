@@ -1,0 +1,8 @@
+services:
+  kdmid_checker:
+    build: .
+    container_name: kdmid_checker
+    restart: unless-stopped
+    environment:
+      - TG_BOT_TOKEN= # Токен телеграм бота который будет присылать вам уведомления
+      - TG_CHAT_ID= # ID Вашего телеграм аккаунта
